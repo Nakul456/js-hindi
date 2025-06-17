@@ -28,3 +28,16 @@ Jsuser.age = "48"
 Jsuser.email = "nakuoojfoisdj"
 console.log(Jsuser);
 
+Jsuser.greeting = function() {
+    console.log('hello JS user');
+    
+}
+
+Jsuser.greetingTwo = function() {
+    console.log(`hello JS user ,${this.name}`);
+    
+}
+console.log(Jsuser.greeting());
+console.log(Jsuser.greetingTwo());
+
+
