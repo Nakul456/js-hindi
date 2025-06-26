@@ -9,7 +9,7 @@ console.log(anothername);
 console.log(myYoutubename);
 
 
-//in the above prolem we get the copy of the ordinal value this is calle stack
+//in the above prolem we get the copy of the ordinal value this is called stack
 
 let Userone = {
     email:"nakulgoogle.com",
