@@ -12,9 +12,45 @@
 
 </body>
 <script>
-
     function addLanguage(langName) {
-        
+        const li = document.createElement('Li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.Language').
+        appendChild(li)
     }
+
+    addLanguage("Python")
+    addLanguage("typescript")
+
+    function addoptiLanguage(langName) {
+        const li =document.createElement('li');
+        const addText = document.createTextNode(langName)
+        li.appendChild(addText)
+        document.querySelector('.Language').appendChild(li)
+    }
+    addoptiLanguage("c++")
+
+    function addanothorLanguage (langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.Language').appendChild(li)
+    }
+    addanothorLanguage("Java")
+
+    //Edit
+       const SecondLang=document.querySelector("li:nth-child(3)")
+    //    SecondLang.innerHTML=("devpos")
+        const newLi = document.createElement('li')   
+        newLi.textContent = "MOjo"
+         SecondLang.replaceWith(newLi)
+     
+        const firstLang = document.querySelector("li:first-child")
+        const lastli = document.createElement('li');
+        lastli.textContent = "Typescript"
+        firstLang.replaceWith(SecondLang)
+
+    //remove
+      const lastLang = document.querySelector("li:last-child")
+      lastLang.remove()   
 </script>
-</html>
+</html>-
